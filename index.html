@@ -1,29 +1,70 @@
 <!DOCTYPE html>
-<html>
-    <!-- Phần đầu -->
-    <head>
-        <!-- Gắn file CSS vào HTML -->
-        <link rel="stylesheet" href="assets/css/main.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nakota Tarot</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="website icon" type="png" href="assets/image/logo-title.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="assets/image/logo.png" alt="Nakota">
+      </div>
+      <ul class="menu">
+        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Sản phẩm</a></li>
+        <li><a href="#">Thư viện</a></li>
+        <li><a href="#">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Logo website -->
-        <link rel="website icon" type="png" href="assets/image/logo-title.png">
+  <main>
+    <section class="hero">
+      <h1>Chủ Gì Đó Giới Thiệu Gì Đó...</h1>
+      <button class="cta">Tìm hiểu thêm</button>
+    </section>
 
-        <!-- Tiêu đề, VD là Facebook hoặc YouTube -->
-        <title>Nakota</title>
-
-        <!-- UTF-8 để sử dụng Tiếng Việt -->
-        <meta charset="utf-8">
-        
-    </head>
-
-    <!-- Phần thân -->
-    <body>
-        <div class="head">
-            <img src="assets/image/logo-title.png" alt="Logo Nakota" height="50px">
+    <section class="products">
+      <h2>Sản phẩm</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="tarot-card-1.jpg" alt="Tarot Card 1">
+          <h3>Tarot Card 1</h3>
+          <p>Mô tả sản phẩm 1</p>
+          <button class="buy-button">Mua ngay</button>
         </div>
-        <h1 class="first-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptas eaque facilis pariatur repellendus, id laudantium, ratione aut fugiat veniam aliquid. Officiis est, eligendi explicabo perspiciatis vel incidunt? Quasi, iure!</h1>
-        <h1 class="second-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatum aspernatur omnis labore nemo, dolor magni odio numquam, laborum aut dolores placeat optio architecto error, nihil dolore illum. Totam, sint!</h1>
-        <h1 class="second-heading">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro illo assumenda ratione voluptas, dolores similique obcaecati molestiae. Aperiam magni rem nulla, amet nihil nobis, dolore in, placeat sequi nesciunt laboriosam!</h1>
-        
-    </body>
-</html>/
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>Về chúng tôi</h2>
+      <div class="founder-info">
+        <img src="founder-image.jpg" alt="Founder">
+        <div class="founder-details">
+          <h3>Founder</h3>
+          <p>Nguyễn Hoàng Linh</p>
+          <p>Mô tả về người sáng lập</p>
+        </div>
+      </div>
+      <div class="reader-info">
+        <img src="reader-image.jpg" alt="Reader">
+        <div class="reader-details">
+          <h3>Reader</h3>
+          <p>Nguyễn Đức Lân</p>
+          <p>Mô tả về người đọc bài</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Nakota. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/script/script.js"></script>
+</body>
+</html>
