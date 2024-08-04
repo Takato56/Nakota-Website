@@ -1,51 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nakota Tarot</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="website icon" type="png" href="assets/image/logo-title.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" >
+  <!-- MAIN-WEB -->
 </head>
+
 <body>
   <header>
     <nav>
-      <div class="logo">
+      <div id="logo">
         <img src="assets/image/logo.png" alt="Nakota">
       </div>
-      <ul class="menu">
-        <li><a href="#">Giới thiệu</a></li>
-        <li><a href="#">Sản phẩm</a></li>
-        <li><a href="#">Thư viện</a></li>
-        <li><a href="#">Liên hệ</a></li>
+      <ul id="menu">
+        <li><a href="#"><p>Giới thiệu</p><p>tarot</p><img src="assets/image/cat1.png" alt=""></a></li>
+        <li><a href="#"><p>Sản phẩm</p><p>tarot</p><img src="assets/image/cat2.png" alt=""></a></li>
+        <li><a href="#"><p>Thư viện</p><p>tarot</p><img src="assets/image/cat1.png" alt=""></a></li>
+        <li><a href="#"><p>Liên hệ</p><p>tarot</p><img src="assets/image/cat2.png" alt=""></a></li>
+
       </ul>
+      <div id="btn-group">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-shopping-cart"></i>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <h1>Chủ Gì Đó Giới Thiệu Gì Đó...</h1>
-      <button class="cta">Tìm hiểu thêm</button>
+    <section id="hero">
+      <div class="intersection" data-animation="fade-right">
+        <h1>Chữ Gì Đó Giới Thiệu Gì Đó...</h1>
+        <button class="contact-btn">
+          <span>Tìm hiểu thêm</span>
+        </button>
+      </div>
     </section>
 
-    <section class="products">
-      <h2>Sản phẩm</h2>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="tarot-card-1.jpg" alt="Tarot Card 1">
-          <h3>Tarot Card 1</h3>
-          <p>Mô tả sản phẩm 1</p>
-          <button class="buy-button">Mua ngay</button>
+    <section id="introduce">
+      <div class="introduce-sub">
+        <img src="assets/image/logo2.png" alt="Nakota">
+        <div class="introduce-content">
+          <h1>NAKOTA TAROT</h1>
+          <p>Giới thiệu các thức các kiểu</p>
+          <button class="contact-btn">
+            <span>Liên hệ ngay</span>
+          </button>
+
         </div>
       </div>
     </section>
 
-    <section class="about">
-      <h2>Về chúng tôi</h2>
+    <section id="products">
+      <h1>Cẩm nang Tarot</h1>
+      <!-- <div class="product-grid">
+        <div class="product-card">
+          <img src="tarot-card-1.jpg" alt="Tarot Card 1">
+          <h4>Tarot Card 1</h4>
+          <p>Mô tả sản phẩm 1</p>
+          <button class="buy-button">Mua ngay</button>
+        </div>
+      </div> -->
+     
+
+    </section>
+
+    <section id="service">
+      <div class="service-title">
+        <div class="title">
+          <img src="assets/image/graphic_03.png" alt="Nakota">
+        </div>
+        <h1 class="title">Dịch vụ</h1>
+      </div>
+      <div class="service-img">
+        <div class="img-sub">    
+            <img src="assets/image-service/1.png" alt="">
+          <h5>Tarot</h5>
+        </div>
+        <div class="img-sub">
+          <img src="assets/image-service/2.png" alt="">
+          <h5>Lenormand</h5>
+        </div>
+        <div class="img-sub">
+          <img src="assets/image-service/3.png" alt="">
+          <h5>Chiêm tinh</h5>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-title">
+        <div class="title">
+          <img src="assets/image/logo-title.png" alt="Nakota">
+        </div>
+        <h1 class="title">Về chúng mình</h1>
+      </div>
+      <div class="about-img">
+        <div class="img-reader">
+          <img src="assets/image-user/founder.jpg" alt="">
+          <h2>Founder</h2>
+          <h4>Na</h4>
+        </div>
+        <div class="img-reader">
+          <img src="assets/image-user/reader1.png" alt="">
+          <h2>Reader</h2>
+          <h4>Nguyễn Hoàng Lân</h4>
+        </div>
+        <div class="img-reader">
+          <img src="assets/image-user/reader2.png" alt="">
+          <h2>Reader</h2>
+          <h4>Nguyễn Đức Lân</h4>
+        </div>
+      </div>
+      <!-- <h2>Về chúng tôi</h2>
       <div class="founder-info">
         <img src="founder-image.jpg" alt="Founder">
         <div class="founder-details">
-          <h3>Founder</h3>
+          <h4>Founder</h4>
           <p>Nguyễn Hoàng Linh</p>
           <p>Mô tả về người sáng lập</p>
         </div>
@@ -53,18 +128,35 @@
       <div class="reader-info">
         <img src="reader-image.jpg" alt="Reader">
         <div class="reader-details">
-          <h3>Reader</h3>
+          <h4>Reader</h4>
           <p>Nguyễn Đức Lân</p>
           <p>Mô tả về người đọc bài</p>
         </div>
-      </div>
+      </div> -->
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2023 Nakota. All rights reserved.</p>
+    <div class="footer-sub1">
+      <p style="font-weight: bold;">Địa chỉ:</p>
+      <p style="font-weight: bold;">Hotline:</p>
+      <p style="font-weight: bold;">Email:</p>
+    </div>
+    <div class="footer-sub2" style="padding-top: 10px;">
+      <label for="" style="font-weight: bold;">Đăng ký nhận tin khuyến mãi:</label><br>
+      <input type="text" placeholder="Nhập địa chỉ email">
+      <button>Gửi</button><br><br><br>
+      <span>Chính sách đặt hàng</span>
+    </div>
+    <div class="footer-sub3" style="padding-top: 10px;">  
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-tiktok"></i>
+    </div>
+    
   </footer>
 
   <script src="assets/script/script.js"></script>
 </body>
+
 </html>

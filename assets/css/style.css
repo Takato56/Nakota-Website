@@ -1,67 +1,190 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
     margin: 0;
     padding: 0;
+    
   }
   
   header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+    width: 100%;
+    background-color: #fff;
+    padding: 0px;
+    position: fixed;
+    z-index: 1000;
   }
   
-  nav {
+  
+  header nav{
+    padding: 5px 60px 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
-  .menu {
+
+  #logo img{
+    width: 74px;
+    height: 74px;
+    padding-right: 165px;
+  }
+
+  #menu {
     list-style-type: none;
     display: flex;
     margin: 0;
     padding: 0;
   }
-  
-  .menu li {
-    margin-left: 20px;
+
+  #menu li {
+    padding: 15px;
   }
   
-  .menu a {
-    color: #fff;
+  #menu a {
+    color: #000000;
+    text-transform: uppercase;
     text-decoration: none;
+    
+  }
+  #menu p{
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    line-height: 0px
+    
+  }
+
+  #menu img{
+    margin: 0px 32px 0px;
+    width: 22px;
+    height: 22px;
+  }
+
+  #btn-group i{
+    padding: 2px;
+    color: #000;
+    font-size: 19px;
   }
   
-  .hero {
-    background-image: url('tarot-background.jpg');
-    background-size: cover;
+  #hero {
+    padding: 200px 842px 300px 0px;
+    background: url('/assets/image/banner1.png') top center / cover no-repeat;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
     background-position: center;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ 
+  #hero .intersection{
+    background: linear-gradient(180deg , rgba(217, 217, 217, 0.70), rgb(191, 191, 191));;
+    width: 105%;
+    height: 240px;
+    display: table;
     align-items: center;
-    color: #fff;
+    padding-top: 34px;
+    padding-left: 100px;
+  }
+
+  /* [data-animation="fade-right"]{
+    opacity: 0;
+    transform: translateX(80px);
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out;
+  }
+
+  [data-animation="fade-right"].fade-right-visible {
+    opacity: 1;
+    transform: translateX(0);
+  } */
+
+  #hero .intersection h1{
+    font-size: 40px;
   }
   
-  .hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+  #introduce{
+    width: 100%;
+    height: 50%;
   }
-  
-  .cta {
-    background-color: #333;
-    color: #fff;
+
+  #introduce .introduce-sub{
+    padding: 15px 100px 34px;
+    display: flex;
+  }
+
+  #introduce .introduce-sub img{
+    width: 497px;
+    height: 497px;
+  }
+
+  #introduce .introduce-content{
+    width: 100%;
+    padding: 120px 70px 70px 139px;
+    font-size: 25px;
+  }
+
+  /* btn */
+  .contact-btn {
+    text-transform: uppercase;
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    font-size: 10px;
+    font-weight: bold;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    border-radius: var(--button_radius);
+    background: linear-gradient(
+      to bottom right,
+      var(--highlight-color),
+      var(--shadow-color)
+    );
+    box-shadow: 6px 6px 16px var(--shadow-color),
+      -6px -6px 16px var(--highlight-color);
     cursor: pointer;
   }
   
-  .products {
-    padding: 40px;
+  .contact-btn span {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
   }
   
+  .contact-btn:hover span{
+    transform: translateY(-0.33em);
+  }
+  
+  .contact-btn:active span {
+    transform: translateY(0);
+  }
+  /* Hết */
+
+  #products {
+    background: url('/assets/image/banner2.png') top center / cover no-repeat;
+    height: 680px;
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #products h1{
+    text-align: center;
+    padding-top: 112px;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  
+  /*
   .product-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -84,13 +207,100 @@ body {
     padding: 8px 16px;
     font-size: 14px;
     cursor: pointer;
+  } */
+
+  #service{
+    width: 100%;
+    height: 700px;
+    text-transform: uppercase;
+  }
+  #service .service-title{
+    padding-top: 60px;
+  }
+  #service .title{
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+  }
+
+  #service .img-sub{
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+  }
+
+  #service .title img{
+    width: 170px;
+    height: 123px;
+  }
+
+  #service .service-img{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-sub{
+    width: 33%;
   }
   
-  .about {
-    padding: 40px;
+  .img-sub img{
+    width: 265px;
+    height: 265px;
   }
   
-  .founder-info,
+
+  #about{
+    width: 100%;
+    height: 690px;
+    text-transform: uppercase;
+    background-image: url('/assets/image/Rectangle.png');
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #about .about-title{
+    padding-top: 60px;
+  }
+
+  #about  .about-title img{
+    width: 115px;
+    height: 115px;
+  }
+  
+  #about .title{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    margin: 0;
+  }
+
+  #about .about-img{
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  #about .about-img .img-reader h2 , h4{
+    color: #fff;
+    text-align: center;
+  }
+
+  #about .about-img .img-reader{
+    width: 33%;
+    text-align: center;
+  } 
+
+  #about .about-img .img-reader img{
+    align-items: center;
+    width: 258.885px;
+    height: 260.822px;
+  }
+  
+
+  /* .founder-info,
   .reader-info {
     display: flex;
     align-items: center;
@@ -104,11 +314,23 @@ body {
     object-fit: cover;
     border-radius: 50%;
     margin-right: 20px;
-  }
+  } */
   
   footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 100px 0px;
+  }
+  
+  .footer-sub2 input , button{
+    border-radius: 5px;
+  }
+
+  .footer-sub3{
+    align-items: center;
+    font-size: 25px;
   }
