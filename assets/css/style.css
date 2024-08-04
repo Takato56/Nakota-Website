@@ -157,6 +157,8 @@ body {
   
   .contact-btn:hover span{
     transform: translateY(-0.33em);
+    background-color: #000;
+    color: white;
   }
   
   .contact-btn:active span {
