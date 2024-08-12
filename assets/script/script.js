@@ -1,15 +1,16 @@
-const ctaButton = document.querySelector('.cta');
-ctaButton.addEventListener('click', () => {
-  ctaButton.style.backgroundColor = '#000';
-  ctaButton.style.color = '#fff';
+// const ctaButton = document.querySelector('.cta');
+// ctaButton.addEventListener('click', () => {
+//   ctaButton.style.backgroundColor = '#000';
+//   ctaButton.style.color = '#fff';
+// });
+
+// const buyButtons = document.querySelectorAll('.buy-button');
+// buyButtons.forEach(button => {
+//   button.addEventListener('click', () => {
+//     alert('Sản phẩm đã được thêm vào giỏ hàng!');
+//   });
 });
 
-const buyButtons = document.querySelectorAll('.buy-button');
-buyButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    alert('Sản phẩm đã được thêm vào giỏ hàng!');
-  });
-});
 
 
 // intersection observer API cho class "intersection"
@@ -28,4 +29,16 @@ buyButtons.forEach(button => {
 // elements.forEach(element => {
 //   observer.observe(element);
 // })
+
+
+
+
+
+// const cards = document.querySelectorAll('.card');
+//     cards.forEach(card => {
+//       card.addEventListener('click', () => {
+//         alert(`You clicked on the ${card.querySelector('.card-name').textContent} card.`);
+//       });
+//     });
+
 
