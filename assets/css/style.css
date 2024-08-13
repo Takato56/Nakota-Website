@@ -182,69 +182,74 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 104vh;
   } 
   
   #products h1{
+    padding-top: 2%;;
     text-align: center;
     font-size: 55px;
     text-transform: uppercase;
     color: #fff;
+    margin-right: 3%;
   } 
 
-  
-  #products .card-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 20px;
+  #products .swiper {
+    margin-top: 4%;
+    width: 90%;
+    height: 100%;
+    position: relative;
   }
 
-  #products .card img{
-    width: 100%;
-    height: 100%;  
-    object-fit: cover; 
-    /* width: 150px;
-    height: 250px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    cursor: pointer; */
+  #products .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
   }
+
+  #products .swiper-slide img{
+    width: 90%;
+  }
+
+  #products .swiper-button-next,
+  #products .swiper-button-prev {
+    padding-top: 250%;
+    position: absolute;
+    top: 37%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  #products .swiper-button-next {
+      right: 35px;  
+  }
+
+  #products .swiper-button-prev { 
+      left: 35px; 
+  }
+
+  #products .swiper-button-next i,
+  #products .swiper-button-prev i {
+      font-size: 50px; /* Adjust icon size */
+      color: #ffffff; /* Adjust icon color */
+  }
+
+  #products .swiper-button-next::after,
+  #products .swiper-button-prev::after {
+      content: none; /* Remove the default Swiper icons */
+  }
+    
   #products .card-name {
     margin-top: 5%;
     color: #fff;
     border: 3px solid #fff;
     text-align: center;
     font-size: 25px;
-
-    /* color: #fff;
-    border: 4px solid #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    text-align: center;
-    font-size: 14px; */
-  }
-  
-/*   
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-  }
-  
-  .product-card {
-    text-align: center;
-  }
-  
-  .product-card img {
-    width: 100%;
-    height: auto;
-  }
-   */
+    margin-right: 7%;
+    margin-left: 7%;
+  } 
 
 
   #service{
@@ -338,21 +343,6 @@ body {
   }
   
 
-  /* .founder-info,
-  .reader-info {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-  
-  .founder-info img,
-  .reader-info img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-right: 20px;
-  } */
   
   footer {
     background-color: #ffffff;
