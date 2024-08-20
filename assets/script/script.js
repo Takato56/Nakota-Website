@@ -9,7 +9,7 @@
 //   button.addEventListener('click', () => {
 //     alert('Sản phẩm đã được thêm vào giỏ hàng!');
 //   });
-});
+// });
 
 
 
@@ -41,4 +41,25 @@
 //       });
 //     });
 
+
+var swiper = new Swiper('.swiper', {
+  slidesPerView: 6,
+  direction: getDirection(),
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  on: {
+    resize: function () {
+      swiper.changeDirection(getDirection());
+    },
+  },
+});
+
+function getDirection() {
+  var windowWidth = window.innerWidth;
+  var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+  return direction;
+}
 
