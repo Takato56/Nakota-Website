@@ -1,451 +1,458 @@
+@font-face {
+  font-family: 'Linote Heavy';
+  src: url('/assets/font/Linotte Heavy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Linote Regular';
+  src: url('/assets/font/Linotte Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LinoteSemiBold';
+  src: url('/assets/font/Linotte Semi Bold.ttf') format('truetype');
+}
+
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
-    margin: 0;
-    padding: 0;
-    
-  }
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+  margin: 0;
+  padding: 0;    
+}
   
-  header {
-    width: 100%;
-    background-color: #fff;
-    padding: 0px;
-    position: fixed;
-    z-index: 1000;
-  }
+header {
+  width: 100%;
+  background-color: #fff;
+  padding: 0px;
+  position: fixed;
+  z-index: 1000;
+}
   
+header nav {
+  padding: 5px 60px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo img{
+  width: 74px;
+  height: 74px;
+  padding-right: 165px;
+}
+
+#menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  padding: 15px;
+}
   
-  header nav{
-    padding: 5px 60px 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+#menu a {
+  font-family: LinoteSemiBold;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;   
+}
 
-  #logo img{
-    width: 74px;
-    height: 74px;
-    padding-right: 165px;
-  }
+#menu p{
+  font-weight: bold;
+  font-size: 11px;
+  text-align: center;
+  line-height: 0px
+}
 
-  #menu {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
+#menu img{
+  margin: 0px 32px 0px;
+  width: 22px;
+  height: 22px;
+}
 
-  #menu li {
-    padding: 15px;
-  }
+#btn-group i{
+  padding: 2px;
+  color: #000;
+  font-size: 19px;
+}
   
-  #menu a {
-    color: #000000;
-    text-transform: uppercase;
-    text-decoration: none;
-    
-  }
-  #menu p{
-    font-weight: bold;
-    font-size: 11px;
-    text-align: center;
-    line-height: 0px
-    
-  }
+#hero {
+  padding: 25% 58% 30% 0;
+  background: url('/assets/image/banner1.png') top center / cover no-repeat;
 
-  #menu img{
-    margin: 0px 32px 0px;
-    width: 22px;
-    height: 22px;
-  }
-
-  #btn-group i{
-    padding: 2px;
-    color: #000;
-    font-size: 19px;
-  }
-  
-  #hero {
-    padding: 25% 58% 30% 0;
-    background: url('/assets/image/banner1.png') top center / cover no-repeat;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
  
-  #hero .intersection{
-    background: linear-gradient(180deg , rgba(217, 217, 217, 0.70), rgb(191, 191, 191));;
-    width: 85%;
-    height: 240px;
-    display: table;
-    align-items: center;
-    padding-top: 34px;
-    padding-left: 100px;
-  }
+#hero .intersection{
+  background: linear-gradient(180deg , rgba(217, 217, 217, 0.70), rgb(191, 191, 191));;
+  width: 85%;
+  height: 240px;
+  display: table;
+  align-items: center;
+  padding-top: 34px;
+  padding-left: 100px;
+}
 
-  /* [data-animation="fade-right"]{
-    opacity: 0;
-    transform: translateX(80px);
-    transition: opacity .5s ease-in-out, transform .5s ease-in-out;
-  }
+/* [data-animation="fade-right"]{
+  opacity: 0;
+  transform: translateX(80px);
+  transition: opacity .5s ease-in-out, transform .5s ease-in-out;
+}
 
-  [data-animation="fade-right"].fade-right-visible {
-    opacity: 1;
-    transform: translateX(0);
-  } */
+[data-animation="fade-right"].fade-right-visible {
+  opacity: 1;
+  transform: translateX(0);
+} */
 
-  #hero .intersection h1{
-    font-size: 240%;
-  }
+#hero .intersection h1{
+  font-size: 240%;
+}
   
-  #introduce{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-  }
+#introduce{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
 
-  #introduce .introduce-sub{
-    padding: 2% 7% 2%;
-    display: flex;
-    justify-content: center;
-  }
+#introduce .introduce-sub{
+  padding: 2% 7% 2%;
+  display: flex;
+  justify-content: center;
+}
 
-  #introduce .introduce-sub img{
-    object-fit: cover;
-    width: 40%;
-    height: 100%;
-  }
+#introduce .introduce-sub img{
+  object-fit: cover;
+  width: 40%;
+  height: 100%;
+}
 
-  #introduce .introduce-content{
-    line-height: 30%;
-    width: 100%;
-    padding: 10% 5% 5% 10%;
-    font-size: 42px;
-  }
+#introduce .introduce-content{
+  line-height: 30%;
+  width: 100%;
+  padding: 10% 5% 5% 10%;
+  font-size: 42px;
+}
 
-  /* btn */
-  .contact-btn {
-    text-transform: uppercase;
-    --button_radius: 0.75em;
-    --button_color: #e4e4e4;
-    --button_outline_color: #000000;
-    --shadow-color: rgba(0, 0, 0, 0.2);
-    --highlight-color: rgba(255, 255, 255, 0.2);
-    font-size: 14px;
-    font-weight: bold;
-    border: none;
-    border-radius: var(--button_radius);
-    background: linear-gradient(
-      to bottom right,
-      var(--highlight-color)
-    );
+/* btn */
+.contact-btn {
+  text-transform: uppercase;
+  --button_radius: 0.75em;
+  --button_color: #e4e4e4;
+  --button_outline_color: #000000;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: linear-gradient(
+    to bottom right,
+    var(--highlight-color)
+  );    
+  cursor: pointer;
+}
+  
+.contact-btn span {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+  
+.contact-btn:hover span{
+  transform: translateY(-0.33em);
+  background-color: #000;
+  color: white;
+}
+  
+.contact-btn:active span {
+  transform: translateY(0);
+}
+/* Hết */
+
+#products {
+  background: url('/assets/image/banner2.jpg') top center / cover no-repeat;
+  width: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 104vh;
+} 
+  
+#products h1{
+  padding-top: 2%;;
+  text-align: center;
+  font-size: 55px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-right: 3%;
+} 
+
+#products .swiper {
+  margin-top: 4%;
+  width: 90%;
+  height: 100%;
+  position: relative;
+}
+
+
+#products .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+#products .swiper-slide img{
+  width: 90%;
+}
+
+#products .swiper-button-next,
+#products .swiper-button-prev {
+  padding-top: 250%;
+  position: absolute;
+  top: 37%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+#products .swiper-button-next {
+  right: 35px;  
+}
+
+#products .swiper-button-prev { 
+  left: 35px; 
+}
+
+#products .swiper-button-next i,
+#products .swiper-button-prev i {
+  font-size: 50px; /* Adjust icon size */
+  color: #ffffff; /* Adjust icon color */
+}
+
+#products .swiper-button-next::after,
+#products .swiper-button-prev::after {
+  content: none; /* Remove the default Swiper icons */
+}
     
-    cursor: pointer;
-  }
+#products .card-name {
+  margin-top: 5%;
+  color: #fff;
+  border: 3px solid #fff;
+  text-align: center;
+  font-size: 25px;
+  margin-right: 7%;
+  margin-left: 7%;
+} 
+
+
+#service{
+  width: 100%;
+  height: 110vh;
+  text-transform: uppercase;
+}
+
+#service .service-title{
+  padding-top: 60px;
+}
+#service .title{
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+}
+
+#service .title img{
+  width: 12%;
+}
+
+/* #service .service-img{
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+#service .img-sub{
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  width: 33%;
+}
+
+#service .img-sub img{
+  width: 265px;
+  height: 265px;
+} */
   
-  .contact-btn span {
-    display: block;
-    box-sizing: border-box;
-    border: 2px solid var(--button_outline_color);
-    border-radius: var(--button_radius);
-    padding: 0.75em 1.5em;
-    background: var(--button_color);
-    color: var(--button_outline_color);
-    transform: translateY(-0.2em);
-    transition: transform 0.1s ease;
-  }
-  
-  .contact-btn:hover span{
-    transform: translateY(-0.33em);
-    background-color: #000;
-    color: white;
-  }
-  
-  .contact-btn:active span {
-    transform: translateY(0);
-  }
-  /* Hết */
+.element-container,
+.tarot-elements {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.element-container {
+  width: 1240px;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.tarot-elements {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 193px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-33xl);
+  color: var(--color-black);
+  font-family: var(--font-r0c0i-linotte);
 
-  #products {
-    background: url('/assets/image/banner2.jpg') top center / cover no-repeat;
-
-    width: 100%;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 104vh;
-  } 
-  
-  #products h1{
-    padding-top: 2%;;
-    text-align: center;
-    font-size: 55px;
-    text-transform: uppercase;
-    color: #fff;
-    margin-right: 3%;
-  } 
-
-  #products .swiper {
-    margin-top: 4%;
-    width: 90%;
-    height: 100%;
-    position: relative;
-  }
+  padding-top: 26%;
+}
+.ellipse-parent {
+  width: 318px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
 
 
-  #products .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-  }
-
-  #products .swiper-slide img{
-    width: 90%;
-  }
-
-  #products .swiper-button-next,
-  #products .swiper-button-prev {
-    padding-top: 250%;
-    position: absolute;
-    top: 37%;
-    transform: translateY(-50%);
-    z-index: 10;
-  }
-
-  #products .swiper-button-next {
-      right: 35px;  
-  }
-
-  #products .swiper-button-prev { 
-      left: 35px; 
-  }
-
-  #products .swiper-button-next i,
-  #products .swiper-button-prev i {
-      font-size: 50px; /* Adjust icon size */
-      color: #ffffff; /* Adjust icon color */
-  }
-
-  #products .swiper-button-next::after,
-  #products .swiper-button-prev::after {
-      content: none; /* Remove the default Swiper icons */
-  }
+.component-item,
+.tarot-title {
+  position: absolute;
+  margin: 0 !important;
+}
+.tarot-title {
+  width: 160px;
+  bottom: -119px;
+  left: calc(50% - 80px);
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  font-size: 180%;
+}
+.component-item {
     
-  #products .card-name {
-    margin-top: 5%;
-    color: #fff;
-    border: 3px solid #fff;
-    text-align: center;
-    font-size: 25px;
-    margin-right: 7%;
-    margin-left: 7%;
-  } 
+  height: 381px;
+  width: 375px;
+  bottom: -33px;
+  left: -29px;
+  z-index: 1;
+  border: 3px solid #000;
+  border-radius: 50%;
+}
+
+.component-item img{
+  width: 80%;
+  height: 80%;
+  /* padding-left: 2%; */
+  padding-top: 10%;
+}
+
+.vector-icon,
+.vector-icon1 {
+  height: 43.4px;
+  width: 47.1px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: 135.2px;
+  object-fit: contain;
+  z-index: 10;
+}
+.vector-icon {
+  left: -51px;
+}
+.vector-icon1 {
+  right: -54.1px;
+}
 
 
-  #service{
-    width: 100%;
-    height: 104vh;
-    text-transform: uppercase;
-  }
+#about{
+  width: 100%;
+  height: 690px;
+  text-transform: uppercase;
+  background-image: url('/assets/image/Rectangle.png');
 
-  #service .service-title{
-    padding-top: 60px;
-  }
-  #service .title{
-    text-align: center;
-    font-size: 40px;
-    margin: 0;
-  }
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  #service .title img{
-    width: 12%;
-  }
+#about .about-title{
+  padding-top: 60px;
+}
 
-  /* #service .service-img{
-    padding-top: 40px;
-    display: flex;
-    justify-content: center;
-  }
-
-  #service .img-sub{
-    text-align: center;
-    font-size: 40px;
-    margin: 0;
-    width: 33%;
-  }
-
-  #service .img-sub img{
-    width: 265px;
-    height: 265px;
-  } */
+#about  .about-title img{
+  width: 115px;
+  height: 115px;
+}
   
-  .element-container,
-  .tarot-elements {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    max-width: 100%;
-  }
-  .element-container {
-    width: 1240px;
-    justify-content: space-between;
-    gap: var(--gap-xl);
-  }
-  .tarot-elements {
-    align-self: stretch;
-    justify-content: center;
-    padding: 0 var(--padding-xl) 193px;
-    box-sizing: border-box;
-    text-align: center;
-    font-size: var(--font-size-33xl);
-    color: var(--color-black);
-    font-family: var(--font-r0c0i-linotte);
+#about .title{
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  margin: 0;
+}
 
-    padding-top: 26%;
-  }
-  .ellipse-parent {
-    width: 318px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: relative;
-  }
+#about .about-img{
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+#about .about-img .img-reader h2 , h4{
+  color: #fff;
+  text-align: center;
+}
 
+#about .about-img .img-reader{
+  width: 33%;
+  text-align: center;
+} 
 
-  .component-item,
-  .tarot-title {
-    position: absolute;
-    margin: 0 !important;
-  }
-  .tarot-title {
-    width: 160px;
-    bottom: -119px;
-    left: calc(50% - 80px);
-    font-size: inherit;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-family: inherit;
-    display: inline-block;
-    font-size: 180%;
-  }
-  .component-item {
-    
-    height: 381px;
-    width: 375px;
-    bottom: -33px;
-    left: -29px;
-    z-index: 1;
-    border: 3px solid #000;
-    border-radius: 50%;
-     
-    
-
-  }
-  .component-item img{
-    width: 80%;
-    height: 80%;
-    /* padding-left: 2%; */
-    padding-top: 10%;
-  }
-
-  .vector-icon,
-  .vector-icon1 {
-    height: 43.4px;
-    width: 47.1px;
-    position: absolute;
-    margin: 0 !important;
-    bottom: 135.2px;
-    object-fit: contain;
-    z-index: 10;
-  }
-  .vector-icon {
-    left: -51px;
-  }
-  .vector-icon1 {
-    right: -54.1px;
-  }
-
-
-
-
-  #about{
-    width: 100%;
-    height: 690px;
-    text-transform: uppercase;
-    background-image: url('/assets/image/Rectangle.png');
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  #about .about-title{
-    padding-top: 60px;
-  }
-
-  #about  .about-title img{
-    width: 115px;
-    height: 115px;
-  }
-  
-  #about .title{
-    text-align: center;
-    color: #fff;
-    font-size: 40px;
-    margin: 0;
-  }
-
-  #about .about-img{
-    padding-top: 60px;
-    display: flex;
-    justify-content: center;
-  }
-  #about .about-img .img-reader h2 , h4{
-    color: #fff;
-    text-align: center;
-  }
-
-  #about .about-img .img-reader{
-    width: 33%;
-    text-align: center;
-  } 
-
-  #about .about-img .img-reader img{
-    align-items: center;
-    width: 258.885px;
-    height: 260.822px;
-  }
+#about .about-img .img-reader img{
+  align-items: center;
+  width: 258.885px;
+  height: 260.822px;
+}
   
 
   
-  footer {
-    background-color: #ffffff;
-    color: #000000;
+footer {
+  background-color: #ffffff;
+  color: #000000;
 
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 100px 0px;
-  }
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 100px 0px;
+}
   
-  .footer-sub2 input , button{
-    border-radius: 5px;
-  }
+.footer-sub2 input , button{
+  border-radius: 5px;
+}
 
-  .footer-sub3{
-    align-items: center;
-    font-size: 25px;
-  }
+.footer-sub3{
+  align-items: center;
+  font-size: 25px;
+}
